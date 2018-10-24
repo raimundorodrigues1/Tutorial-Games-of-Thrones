@@ -1,0 +1,10 @@
+<h3>Top Warriors</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let warrior of warriors" class="col-1-4"
+      routerLink="/detail/{{warrior.id}}">
+    <div class="module warrior">
+      <h4>{{warrior.name}}</h4>
+    </div>
+  </a>
+</div>
+<app-warrior-search></app-warrior-search>
